@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wikipedia View</title>
+		<meta charset="utf-8">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|David+Libre|Lora|Dosis|Lobster" rel="stylesheet">
+		<!--<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">-->
+		<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/sunny/jquery-ui.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./Wikipedia.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="./Wikipedia.js"></script>
+	</head>
+	<body class="default-view">
+		<div class="container">
+			<div id="main">
+
+				<!--First show part:only search icon with one sentence-->
+				<div id="searchicon">
+					<i class="glyphicon glyphicon-search"></i>
+					<p id="p1">Search Articles From Wikipedia...</p>
+					<p id="copyright">Made by Yue He</p>
+				</div>
+
+				<!--when you click the search icon, it will show the search bar -->
+				<div id="searchBar">
+					<div class="input-group" id="search">
+				    	<span class="input-group-btn">
+				        	<button id="search_btn" class="btn btn-info btn-lg" type="button" title="Search"><i class="glyphicon glyphicon-search"></i></button>
+				      	</span>
+						<input id="search_input" type="text" class="form-control input-lg" placeholder="Search Articles From Wikipedia...">
+				      	<div class="input-group-btn">
+				        	<button id="b1" class="btn btn-warning btn-lg" type="button" title="Cancle"><i class="glyphicon glyphicon-remove"></i></button>
+				        	<a class="btn btn-success btn-lg" type="button" title="Get the Random Article"href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><i class="glyphicon glyphicon-random"></i></a>
+				      	</div>
+				    </div><!-- /input-group -->
+				</div><!--end of searchBar-->
+
+				<!--when you click the search button,it will show the content bottom-->
+				<div class="row" id="result"></div><!--end of row-->
+
+			</div><!--end of main-->		
+		</div><!--end of contain-->
+	</body>
+</html>
+
